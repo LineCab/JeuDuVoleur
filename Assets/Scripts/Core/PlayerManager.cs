@@ -50,6 +50,8 @@ public class PlayerManager : MonoBehaviour
 	public void UseKey(){
 		hasKey = false;
 	}
+
+	[SerializeField] private int lives = 3; //Nombre de vies du joueur
 	/* [ADDED] */
 	
 	//Ajoute 1 au compteur de morts
@@ -57,6 +59,15 @@ public class PlayerManager : MonoBehaviour
 		nbDeath++;
 		if(hud != null){ //On édite le HUD
 			hud.updateDeathText(nbDeath);
+		}
+		audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
+	}
+	public void RemoveLife(){
+		if (lives > 0) {
+			lives--;
+		}
+		if(hud != null){ //On édite le HUD
+			hud.updateLivesText(lives);
 		}
 		audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
 	}
