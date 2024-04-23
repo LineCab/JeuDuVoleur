@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VisionImpact : MonoBehaviour {
 
+    public int Pv = 3;
     [SerializeField] private TableauReinit tableauReinit = null;
 
     void OnTriggerEnter2D(Collider2D col) {
@@ -26,6 +27,7 @@ public class VisionImpact : MonoBehaviour {
 
         // Ajouter une mort au compteur
         player.GetComponent<PlayerManager>().AddDeath();
+        player.GetComponent<PlayerManager>().RemoveLife();
 
         // Immobiliser le joueur pendant 0.5 seconde
         PlayerManager.SetFreeze(0.5f);
