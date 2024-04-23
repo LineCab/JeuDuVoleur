@@ -37,7 +37,7 @@ public class PlayerManager : MonoBehaviour
 	//Variables attributs  du joueur.
 	
 	private int nbDeath = 0; //Enregistre le nombre de morts.
-	private float timerGame = 0;
+    [SerializeField] private float timerGame = 0;
 	private bool endTimer = false;
 	
 	/* [ADDED] */
@@ -130,7 +130,14 @@ public class PlayerManager : MonoBehaviour
 		
 		//Si le chronomètre n'est pas arrêté, on ajoute le laps de temps écoulé au chronomètre et on actualise le HUD
 		if(!endTimer){
-			timerGame += Time.fixedDeltaTime;
+			timerGame -= Time.fixedDeltaTime;
+
+			if(timerGame <= 0)
+			{
+				endTimer = true;
+				timerGame = 0;
+			}
+
 			if(hud != null){ //On édite le HUD
 				hud.updateTimer(timerGame);
 			}
