@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1322913163522501567}
   - component: {fileID: 2714468212646927894}
-  - component: {fileID: 7893125139345879779}
   - component: {fileID: 6515244977760805372}
   - component: {fileID: 124083131886244749}
   - component: {fileID: 8805123409507799277}
@@ -88,41 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &7893125139345879779
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8498725973006591728}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &6515244977760805372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
+  canDamage: 0
 --- !u!50 &124083131886244749
 Rigidbody2D:
   serializedVersion: 4
@@ -181,3 +146,4 @@ MonoBehaviour:
   goToTransparent: 0.5
   transparent: 0.75
   startOpaque: 1
+  impact: {fileID: 0}

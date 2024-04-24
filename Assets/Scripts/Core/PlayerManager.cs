@@ -136,6 +136,8 @@ public class PlayerManager : MonoBehaviour
 			{
 				endTimer = true;
 				timerGame = 0;
+
+				QuitGame();
 			}
 
 			if(hud != null){ //On édite le HUD
