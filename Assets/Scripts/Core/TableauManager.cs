@@ -48,6 +48,11 @@ public class TableauManager : MonoBehaviour
 				teleporterRight.GetComponent<Teleport>().SetNumTableau(i+1);
 				teleporterRight.GetComponent<Teleport>().SetPosition(-7.5f,0);
 			}
+			GameObject teleporterTop = tableaux[i].GetComponent<Tableau>().GetTeleporterTop();
+			if(teleporterTop != null){
+				teleporterTop.GetComponent<Teleport>().SetNumTableau(i+1);
+				teleporterTop.GetComponent<Teleport>().SetPosition(-7.5f,0);
+			}
 			
 			//Met tous les tableaux désactivés
 			tableaux[i].SetActive(false);
