@@ -390,6 +390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5074779966056166837, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a13d86c408e82304fbdf2f532e3a7708, type: 3}
     - target: {fileID: 5621234150465771956, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
       propertyPath: hud
       value: 
@@ -941,6 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleporterLeft: {fileID: 789118825}
   teleporterRight: {fileID: 0}
+  teleporterTop: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +1970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleporterLeft: {fileID: 0}
   teleporterRight: {fileID: 0}
+  teleporterTop: {fileID: 0}
 --- !u!1 &789118825 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 935039620488651818, guid: ff1f5deed17eb294d8e6e25e1d1798da, type: 3}
@@ -2485,6 +2491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleporterLeft: {fileID: 0}
   teleporterRight: {fileID: 1328027791}
+  teleporterTop: {fileID: 0}
 --- !u!1 &1291010596
 GameObject:
   m_ObjectHideFlags: 0
@@ -3342,6 +3349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleporterLeft: {fileID: 0}
   teleporterRight: {fileID: 0}
+  teleporterTop: {fileID: 0}
 --- !u!4 &1602220000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3670259482421979201, guid: 69fe086471ab2124daadb544412fefe8, type: 3}
@@ -4438,6 +4446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleporterLeft: {fileID: 1162931630}
   teleporterRight: {fileID: 1814519450}
+  teleporterTop: {fileID: 0}
 --- !u!1001 &4087543847204432128
 PrefabInstance:
   m_ObjectHideFlags: 0
