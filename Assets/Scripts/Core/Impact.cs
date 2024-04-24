@@ -7,6 +7,9 @@ public class Impact : MonoBehaviour
 	//Si lors d'un niveau, il faut réinitialiser la position de certains obstacles : mettre un tableauReinit à votre tableau et mettre la liste des FollowingPlayerMove à réinitialiser
 	//Mettre le tableauReinit dans tous les objets avec un impact dans le tableau
 	[SerializeField] private TableauReinit tableauReinit = null;
+    public float x;
+	public float y;
+	public int numTableau;
 	public bool canDamage;
 	
 	//Si un objet rentre en collision avec l'obstacle
@@ -19,8 +22,7 @@ public class Impact : MonoBehaviour
 				tableauReinit.Reinit();
 			}
 			
-			//On change la position du joueur et on le téléporte aux coordonnées sauvegardées dans le TableauManager dans la variable checkpointPosition.
-            col.gameObject.transform.position = TableauManager.GetCheckpointPosition();
+        	col.gameObject.GetComponent<PlayerManager>().Teleport(x, y, numTableau);
 			
 			//On augmente de 1 le compteur de morts
 			col.gameObject.GetComponent<PlayerManager>().AddDeath(); //On récupère le PlayerManager du joueur pour ajouter la mort
