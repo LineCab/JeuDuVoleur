@@ -91,7 +91,13 @@ public class PlayerManager : MonoBehaviour
 		if(hud != null){ //On édite le HUD
 			hud.updateLevelText(_numTableau);
 		}
-		if(_numTableau == 5){
+		if (SceneManager.GetActiveScene().name == "SceneToEdit" && _numTableau == 5)
+		{
+			StopTimer();
+			hud.showStatMission(nbMoney, timerGame);
+		}
+		if (SceneManager.GetActiveScene().name == "SceneBijouterie" && _numTableau == 7)
+		{
 			StopTimer();
 			hud.showStatMission(nbMoney, timerGame);
 		}

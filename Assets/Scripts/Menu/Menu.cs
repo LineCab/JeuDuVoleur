@@ -106,14 +106,23 @@ public class Menu : MonoBehaviour
 	}
 	public void goMap()
 	{
-		SceneManager.LoadScene("SceneMap2");
+		if (SceneManager.GetActiveScene().name == "SceneToEdit")
+		{
+			SceneManager.LoadScene("SceneMap2");
+		}
+		if (SceneManager.GetActiveScene().name == "SceneBijouterie")
+		{
+			SceneManager.LoadScene("SceneMap3");
+		}
 	}
 
 	public void PlayHome()
 	{
-		//Mettre entre guillemets le nom de la scène vers laquelle charger
-		//Pour utiliser SceneManager, il faut impérativement rajouter "using UnityEngine.SceneManagement;" en haut du script.
 		SceneManager.LoadScene("SceneToEdit");
+	}
+	public void PlayBijouterie()
+	{
+		SceneManager.LoadScene("SceneBijouterie");
 	}
 
 	//Fonction qui affiche la première image des règles
