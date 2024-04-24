@@ -52,7 +52,7 @@ public class PlayerManager : MonoBehaviour
 		hasKey = false;
 	}
 
-	[SerializeField] private int lives = 3; //Nombre de vies du joueur
+	private int lives = 3; //Nombre de vies du joueur
 	/* [ADDED] */
 	
 	//Ajoute 1 au compteur de morts
@@ -90,6 +90,10 @@ public class PlayerManager : MonoBehaviour
 		transform.position = new Vector2(_x,_y);
 		if(hud != null){ //On édite le HUD
 			hud.updateLevelText(_numTableau);
+		}
+		if(_numTableau == 5){
+			StopTimer();
+			hud.showStatMission(nbMoney, timerGame);
 		}
 	}
 	
