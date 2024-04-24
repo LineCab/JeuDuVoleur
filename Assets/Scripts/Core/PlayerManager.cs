@@ -91,6 +91,10 @@ public class PlayerManager : MonoBehaviour
 		if(hud != null){ //On édite le HUD
 			hud.updateLevelText(_numTableau);
 		}
+		if(_numTableau == 5){
+			StopTimer();
+			hud.showStatMission(nbMoney, timerGame);
+		}
 	}
 	
 	public void FinishLine(){

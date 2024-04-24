@@ -102,6 +102,17 @@ public class Menu : MonoBehaviour
 	{
 		//Mettre entre guillemets le nom de la scène vers laquelle charger
 		//Pour utiliser SceneManager, il faut impérativement rajouter "using UnityEngine.SceneManagement;" en haut du script.
+		SceneManager.LoadScene("SceneMap1");
+	}
+	public void goMap()
+	{
+		SceneManager.LoadScene("SceneMap2");
+	}
+
+	public void PlayHome()
+	{
+		//Mettre entre guillemets le nom de la scène vers laquelle charger
+		//Pour utiliser SceneManager, il faut impérativement rajouter "using UnityEngine.SceneManagement;" en haut du script.
 		SceneManager.LoadScene("SceneToEdit");
 	}
 
