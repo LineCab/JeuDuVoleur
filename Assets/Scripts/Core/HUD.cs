@@ -16,7 +16,7 @@ public class HUD : MonoBehaviour
 		deathText.GetComponent<TMP_Text>().text = "Morts : " + nbDeath;
 	}
 	public void updateMoneyText(int nbMoney){
-		moneyText.GetComponent<TMP_Text>().text = "Argents : " + nbMoney + "€";
+		moneyText.GetComponent<TMP_Text>().text = nbMoney + "$";
 	}
 	public void updateLivesText(int nbLives){
 		livesText.GetComponent<TMP_Text>().text = "Vies : " + nbLives;
@@ -28,8 +28,18 @@ public class HUD : MonoBehaviour
 		levelText.GetComponent<TMP_Text>().text = "Niveau " + numLevel;
 	}
 	
-	public void updateTimer(float time){
-		//Permet d'arrondir le temps à deux chiffres après la virgule
-		timerText.GetComponent<TMP_Text>().text = "Temps " + time.ToString("F2")  +"s";
-	}
+	public void updateTimer(float time)
+{
+    // Convertir le temps en minutes et secondes
+    int minutes = Mathf.FloorToInt(time / 60);
+    int seconds = Mathf.FloorToInt(time % 60);
+
+    // Mettre en forme le temps en minutes et secondes
+    string formattedTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+    // Mettre à jour le texte de l'objet TMP_Text
+    timerText.GetComponent<TMP_Text>().text = formattedTime;
+}
+
+
 }
