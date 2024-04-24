@@ -6,6 +6,9 @@ public class VisionImpact : MonoBehaviour {
 
     public int Pv = 3;
     [SerializeField] private TableauReinit tableauReinit = null;
+    public float x;
+	public float y;
+	public int numTableau;
 
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
@@ -23,7 +26,7 @@ public class VisionImpact : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
 
         // Réinitialiser la position du joueur
-        player.transform.position = TableauManager.GetCheckpointPosition();
+        player.GetComponent<PlayerManager>().Teleport(x, y, numTableau);
 
         // Ajouter une mort au compteur
         player.GetComponent<PlayerManager>().AddDeath();
