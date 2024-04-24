@@ -38,6 +38,7 @@ public class PlayerManager : MonoBehaviour
 	
 	private int nbDeath = 0; //Enregistre le nombre de morts.
 	private float timerGame = 0;
+	private int nbMoney = 0;
 	private bool endTimer = false;
 	
 	/* [ADDED] */
@@ -62,6 +63,14 @@ public class PlayerManager : MonoBehaviour
 		}
 		audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
 	}
+
+	public void AddMoney(int x){
+		nbMoney = nbMoney + x;
+		if(hud != null){ //On édite le HUD
+			hud.updateMoneyText(nbMoney);
+		}
+	}
+
 	public void RemoveLife(){
 		if (lives > 0) {
 			lives--;
@@ -77,7 +86,6 @@ public class PlayerManager : MonoBehaviour
 		return nbDeath;
 	}
 	
-	//On récupère le nombre de morts
 	public void Teleport(float _x, float _y, int _numTableau){
 		transform.position = new Vector2(_x,_y);
 		if(hud != null){ //On édite le HUD
