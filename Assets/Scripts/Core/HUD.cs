@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
 	[SerializeField] private GameObject timerText; //On insère l'objet texte qui affiche le compteur de temps
 	[SerializeField] private GameObject livesText; //On insère l'objet texte qui affiche le nombre de vies
 	[SerializeField] private GameObject moneyText; //On insère l'objet texte qui affiche le nombre d'argent récolté
+	[SerializeField] private GameObject statMission;
 
 	public void updateDeathText(int nbDeath){
 		deathText.GetComponent<TMP_Text>().text = "Morts : " + nbDeath;
@@ -26,6 +27,12 @@ public class HUD : MonoBehaviour
 	
 	public void updateLevelText(int numLevel){
 		levelText.GetComponent<TMP_Text>().text = "Niveau " + numLevel;
+	}
+
+	public void showStatMission (int money, float timer){
+		statMission.SetActive(true);
+		statMission.GetComponent<statMission>().updateMoneyText(money);
+		statMission.GetComponent<statMission>().updateTimer(timer);
 	}
 	
 	public void updateTimer(float time)
