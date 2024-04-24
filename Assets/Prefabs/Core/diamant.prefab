@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3086040399816164714}
   - component: {fileID: 9122918461240889551}
   m_Layer: 0
-  m_Name: boucleoreilles
+  m_Name: diamant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ad1d6d2100d50004493bdedcee39c4e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a71a37958c91f641a822c3bb3fbc311, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,4 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: {fileID: 5388448727411101009}
   moneyAmount: 1943
-  collectDistance: 1
+  collectDistance: 1.5
