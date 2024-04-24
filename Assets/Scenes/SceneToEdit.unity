@@ -5457,6 +5457,20 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &2041748229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041748220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f53602c014cfcf478aa51eca6faf22e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pv: 3
+  tableauReinit: {fileID: 0}
 --- !u!4 &2092795734 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9129974697496077425, guid: d247d5a3148fc6d42a2bda600d8f3e4f, type: 3}
@@ -5770,14 +5784,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: camera
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1891597660607445006, guid: a53425b40d9d6e94c92a821c44b332f6, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1120620663821770391, guid: a53425b40d9d6e94c92a821c44b332f6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2041748225}
+    - targetCorrespondingSourceObject: {fileID: 1120620663821770391, guid: a53425b40d9d6e94c92a821c44b332f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2041748229}
   m_SourcePrefab: {fileID: 100100000, guid: a53425b40d9d6e94c92a821c44b332f6, type: 3}
 --- !u!1001 &5525945555765838909
 PrefabInstance:
