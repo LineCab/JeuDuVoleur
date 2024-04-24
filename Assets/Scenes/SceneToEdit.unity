@@ -2211,6 +2211,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &563942488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2285,6 +2286,8 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98ca2732117594a42a203682688f59fe, type: 3}
 =======
+=======
+>>>>>>> Accueil
 --- !u!1 &521783272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,6 +2422,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521783272}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+>>>>>>> Accueil
+=======
 >>>>>>> Accueil
 --- !u!1 &570850457
 GameObject:
@@ -4337,7 +4343,11 @@ BoxCollider2D:
   m_Size: {x: 1.17, y: 2.53}
   m_EdgeRadius: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &924754682
+=======
+--- !u!1 &925381669
+>>>>>>> Accueil
 =======
 --- !u!1 &925381669
 >>>>>>> Accueil
@@ -4349,16 +4359,22 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 924754684}
   - component: {fileID: 924754683}
   m_Layer: 0
   m_Name: baignoire
 =======
+=======
+>>>>>>> Accueil
   - component: {fileID: 925381670}
   - component: {fileID: 925381672}
   - component: {fileID: 925381671}
   m_Layer: 5
   m_Name: Argent
+<<<<<<< HEAD
+>>>>>>> Accueil
+=======
 >>>>>>> Accueil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4366,8 +4382,13 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!212 &924754683
 SpriteRenderer:
+=======
+--- !u!224 &925381670
+RectTransform:
+>>>>>>> Accueil
 =======
 --- !u!224 &925381670
 RectTransform:
@@ -4376,6 +4397,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 924754682}
   m_Enabled: 1
@@ -4439,6 +4461,8 @@ Transform:
   m_Father: {fileID: 1725351354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> Accueil
   m_GameObject: {fileID: 925381669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -4549,6 +4573,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925381669}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+>>>>>>> Accueil
+=======
 >>>>>>> Accueil
 --- !u!1 &939207308
 GameObject:
@@ -5215,6 +5242,7 @@ Transform:
   m_Father: {fileID: 1222571398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.257}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1081675974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5289,6 +5317,8 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d247d5a3148fc6d42a2bda600d8f3e4f, type: 3}
 =======
+=======
+>>>>>>> Accueil
 --- !u!1 &1078879091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5423,6 +5453,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078879091}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+>>>>>>> Accueil
+=======
 >>>>>>> Accueil
 --- !u!114 &1084043363 stripped
 MonoBehaviour:
@@ -7370,7 +7403,11 @@ Transform:
   - {fileID: 421283726}
   - {fileID: 702664083}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1725351354}
+=======
+  - {fileID: 1742692241}
+>>>>>>> Accueil
 =======
   - {fileID: 1742692241}
 >>>>>>> Accueil
@@ -7926,12 +7963,15 @@ Transform:
   m_PrefabInstance: {fileID: 628685339}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1610426572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9129974697496077425, guid: d247d5a3148fc6d42a2bda600d8f3e4f, type: 3}
   m_PrefabInstance: {fileID: 1526487356}
   m_PrefabAsset: {fileID: 0}
 =======
+=======
+>>>>>>> Accueil
 --- !u!1 &1609491597
 GameObject:
   m_ObjectHideFlags: 0
@@ -8011,6 +8051,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609491597}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+>>>>>>> Accueil
+=======
 >>>>>>> Accueil
 --- !u!1 &1627998599
 GameObject:
