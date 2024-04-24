@@ -6,8 +6,7 @@ public class Rotation : MonoBehaviour {
 
 	[SerializeField] private float speed = 5f; //Vitesse de rotation
 	[SerializeField] private float pause = 0f; //S'il s'arrête un certain nombre de secondes
-	[SerializeField] private float angle = 90f; //Au bout de quel angle parcouru il peut marquer une pause
-	[SerializeField] private bool sensHoraire = true; //S'il tourne dans le sens horaire ou non
+	[SerializeField] private float angle = 90f; //Au bout de quel angle parcouru il peut marquer une pause	
 	
 	private int sens = 1;
 	private float timer = 0; //timer du temps de pause
