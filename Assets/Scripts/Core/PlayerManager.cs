@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,7 +34,7 @@ public class PlayerManager : MonoBehaviour
 	
 	
 	[SerializeField] private HUD hud; //on joint le hud du canvas
-	[SerializeField] private AudioManager audioManager; 
+	[SerializeField] private AudioManager audioManager;
 	
 	//Variables attributs  du joueur.
 	
@@ -53,10 +55,17 @@ public class PlayerManager : MonoBehaviour
 	}
 
 	private int lives = 3; //Nombre de vies du joueur
-	/* [ADDED] */
-	
-	//Ajoute 1 au compteur de morts
-	public void AddDeath(){
+
+    private Vector2 positionDeDepart;
+
+	void Start()
+	{
+		positionDeDepart = new Vector2(transform.position.x, transform.position.y);
+	}
+    /* [ADDED] */
+
+    //Ajoute 1 au compteur de morts
+    public void AddDeath(){
 		nbDeath++;
 		if(hud != null){ //On édite le HUD
 			hud.updateDeathText(nbDeath);
@@ -71,15 +80,46 @@ public class PlayerManager : MonoBehaviour
 		}
 	}
 
-	public void RemoveLife(){
+    public void RemoveLife(){
 		if (lives > 0) {
 			lives--;
-		}
-		if(hud != null){ //On édite le HUD
-			hud.updateLivesText(lives);
-		}
-		audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
-	}
+
+            if (hud != null)
+            { //On édite le HUD
+                hud.updateLivesText(lives);
+            }
+            audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
+        }
+        if (lives <= 0)
+        {
+			RespawnJoueur(); // Si le joueur n'a plus de vies, respawn
+        }
+    }
+
+	// Fonction pour respawn le joueur
+    private void RespawnJoueur()
+    {
+
+		Teleport(positionDeDepart.x, positionDeDepart.y, 1);
+        TableauManager.ShowTableau(1);
+
+		// Réinitialisation des items
+		nbMoney = 0;
+
+        if (hud != null)
+        { //On édite le HUD
+            hud.updateMoneyText(nbMoney);
+        }
+
+        // Réinitialisation des vies
+        lives = 3;
+
+        if (hud != null)
+        { //On édite le HUD
+            hud.updateLivesText(lives);
+        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
 	//On récupère le nombre de morts
 	public int GetNbDeath(){
