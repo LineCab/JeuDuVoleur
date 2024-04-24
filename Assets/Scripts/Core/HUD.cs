@@ -18,10 +18,10 @@ public class HUD : MonoBehaviour
 	public void updateMoneyText(int nbMoney){
 		moneyText.GetComponent<TMP_Text>().text = nbMoney + "$";
 	}
-	public void updateLivesText(int nbLives){
-		livesText.GetComponent<TMP_Text>().text = "Vies : " + nbLives;
-		for(int i = 0; i < nbLives; i++){
-		}
+	public void updateLivesText(int lives){
+		livesText.GetComponent<TMP_Text>().text = "Vies : " + lives;
+		// for(int i = 0; i < nbLives; i++){
+		// }
 	}
 	
 	public void updateLevelText(int numLevel){

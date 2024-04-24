@@ -52,7 +52,7 @@ public class PlayerManager : MonoBehaviour
 		hasKey = false;
 	}
 
-	[SerializeField] private int lives = 3; //Nombre de vies du joueur
+	private int lives = 3; //Nombre de vies du joueur
 	/* [ADDED] */
 	
 	//Ajoute 1 au compteur de morts
