@@ -98,5 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: {fileID: 5388448727411101009}
-  moneyAmount: 200
+  moneyAmount: 400
   collectDistance: 1
