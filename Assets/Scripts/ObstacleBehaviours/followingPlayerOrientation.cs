@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FollowingPlayerOrientation : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb; // Le rigidbody pour bouger l'obstacle
     private GameObject player;
 
     void Start()
