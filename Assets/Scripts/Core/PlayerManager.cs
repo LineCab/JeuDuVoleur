@@ -10,7 +10,8 @@ public class PlayerManager : MonoBehaviour
 
 	public static PlayerManager instance;
 	public static GameObject player;
-	
+	public Animator animator;
+
 	void Awake(){
 		if(instance == null){
 			instance = this;
@@ -138,6 +139,8 @@ public class PlayerManager : MonoBehaviour
 		bool isMovingHorizontal = Mathf.Abs(_movement.x) > 0;
 		bool isMovingVertical = Mathf.Abs(_movement.y) > 0;
 
+		
+
 		//On évite que le joueur bouge horizontalement ET verticalement.
 		if (Mathf.Abs(_movement.x) > 0)
         {
@@ -156,11 +159,26 @@ public class PlayerManager : MonoBehaviour
         if (isMovingHorizontal)
         {
             _movement = Vector2.right * _movement.normalized.x;
+						animator.SetInteger("direction", 1);
+				}
+				else if (isMovingVertical)
+				{
+						_movement = Vector2.up * _movement.normalized.y;
+						animator.SetInteger("direction", 2);
+
         }
         else if (isMovingVertical)
         {
             _movement = Vector2.up * _movement.normalized.y;
         }
+
+				if(_movement != Vector2.zero){ //Si le joueur bouge, on partage les variables à l'animator pour qu'il bouge le sprite en conséquence
+					animator.SetFloat("moveX", _movement.x);
+					animator.SetFloat("moveY", _movement.y);
+					animator.SetBool("isWalking", true);
+				} else {
+					animator.SetBool("isWalking", false);
+				}
 		
 		//Si le chronomètre n'est pas arrêté, on ajoute le laps de temps écoulé au chronomètre et on actualise le HUD
 		if(!endTimer){
