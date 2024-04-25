@@ -26,10 +26,34 @@ public class HUD : MonoBehaviour
 		livesText.GetComponent<TMP_Text>().text = "Vies : " + lives;
 		// for(int i = 0; i < nbLives; i++){
 		// }
+		// update source image of the Image component
+		imageLives.GetComponent<Image>().sprite = Resources.Load<Sprite>("hearts/2coeurs");
 	}
+
+
 	public void updateImageLives(int lives){
 		// changing the image of the component
-		imageLives.GetComponent<Image>().sprite = Resources.Load<Sprite>(lives + "Sprites/hearts/Hearts") as Sprite;
+		if (lives == 3)
+		{
+			imageLives.GetComponent<Image>().sprite = Resources.Load<Sprite>("hearts/3coeurs");
+			Console.WriteLine(imageLives.GetComponent<Image>().sprite);
+		}
+		else if (lives == 2)
+		{
+			imageLives.GetComponent<Image>().sprite = Resources.Load<Sprite>("hearts/2coeurs");
+		}
+		else if (lives == 1)
+		{
+			imageLives.GetComponent<Image>().sprite = Resources.Load<Sprite>("hearts/1coeurs");
+		}
+		else if (lives == 0)
+		{
+			imageLives.GetComponent<Image>().sprite = Resources.Load<Sprite>("hearts/0coeurs");
+		}
+		else
+		{
+			Debug.LogError("Error: lives value is not valid");
+		}
 
 		Console.WriteLine(imageLives.GetComponent<Image>().sprite);
 	}
