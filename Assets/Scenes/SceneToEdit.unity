@@ -766,7 +766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &83034012
 Transform:
   m_ObjectHideFlags: 0
@@ -2299,7 +2299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &349143901
 Transform:
   m_ObjectHideFlags: 0
@@ -3325,7 +3325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729425530190804441, guid: ff1f5deed17eb294d8e6e25e1d1798da, type: 3}
       propertyPath: numTableau
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5078317745743440397, guid: ff1f5deed17eb294d8e6e25e1d1798da, type: 3}
       propertyPath: m_IsTrigger
@@ -5881,7 +5881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2284a2b33400477458402d0753b00615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTableau: 4
+  startTableau: 1
 --- !u!4 &1066101294
 Transform:
   m_ObjectHideFlags: 0
