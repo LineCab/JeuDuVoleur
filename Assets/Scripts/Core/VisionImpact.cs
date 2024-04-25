@@ -26,7 +26,6 @@ public class VisionImpact : MonoBehaviour {
         player.transform.position = TableauManager.GetCheckpointPosition();
 
         // Ajouter une mort au compteur
-        player.GetComponent<PlayerManager>().AddDeath();
         player.GetComponent<PlayerManager>().RemoveLife();
 
         // Immobiliser le joueur pendant 0.5 seconde
