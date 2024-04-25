@@ -78,6 +78,7 @@ public class PlayerManager : MonoBehaviour
 		}
 		if(hud != null){ //On édite le HUD
 			hud.updateLivesText(lives);
+			hud.updateImageLives(lives);
 		}
 		audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
 		if (lives <= 0)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class HUD : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class HUD : MonoBehaviour
 	[SerializeField] private GameObject moneyText; //On insère l'objet texte qui affiche le nombre d'argent récolté
 	[SerializeField] private GameObject statMission;
 	[SerializeField] private GameObject gameOver;
+	[SerializeField] private GameObject imageLives;
 
 	public void updateDeathText(int nbDeath){
 		deathText.GetComponent<TMP_Text>().text = "Morts : " + nbDeath;
@@ -24,6 +26,12 @@ public class HUD : MonoBehaviour
 		livesText.GetComponent<TMP_Text>().text = "Vies : " + lives;
 		// for(int i = 0; i < nbLives; i++){
 		// }
+	}
+	public void updateImageLives(int lives){
+		// changing the image of the component
+		imageLives.GetComponent<Image>().sprite = Resources.Load<Sprite>(lives + "Sprites/hearts/Hearts") as Sprite;
+
+		Console.WriteLine(imageLives.GetComponent<Image>().sprite);
 	}
 	
 	public void updateLevelText(int numLevel){
