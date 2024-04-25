@@ -536,6 +536,14 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1084043363}
+    - target: {fileID: 6648101182493240493, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648101182493240493, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.06
+      objectReference: {fileID: 0}
     - target: {fileID: 7558360764163165843, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
       propertyPath: m_Name
       value: Character
@@ -2554,7 +2562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &702664083
 Transform:
   m_ObjectHideFlags: 0
@@ -4335,7 +4343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1222571398
 Transform:
   m_ObjectHideFlags: 0

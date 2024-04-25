@@ -35,6 +35,7 @@ void CollectMoney()
         // Faire disparaître l'objet
         gameObject.SetActive(false);
     }
+    
 }
 
 
