@@ -35,7 +35,10 @@ public class TableauManager : MonoBehaviour
 		lastTableau = children - 1;
 		for (int i = 0; i < children; ++i){
 			tableaux[i] = transform.GetChild(i).gameObject;
+			Debug.Log("i "+i);
+			Debug.Log(tableaux[i]);
 			
+			/*
 			//On fait en sorte que le téléporteur gauche du niveau redirige vers le niveau précédent (ne marche pas si une salle a plusieurs téléporteurs)
 			GameObject teleporterLeft = tableaux[i].GetComponent<Tableau>().GetTeleporterLeft();
 			if(teleporterLeft != null){
@@ -43,16 +46,19 @@ public class TableauManager : MonoBehaviour
 				teleporterLeft.GetComponent<Teleport>().SetPosition(7.5f,0);
 			}
 			//On fait en sorte que le téléporteur droite du niveau redirige vers le niveau suivant
+			
 			GameObject teleporterRight = tableaux[i].GetComponent<Tableau>().GetTeleporterRight();
 			if(teleporterRight != null){
 				teleporterRight.GetComponent<Teleport>().SetNumTableau(i+1);
 				teleporterRight.GetComponent<Teleport>().SetPosition(-7.5f,0);
 			}
+
 			GameObject teleporterTop = tableaux[i].GetComponent<Tableau>().GetTeleporterTop();
 			if(teleporterTop != null){
 				teleporterTop.GetComponent<Teleport>().SetNumTableau(i+1);
 				teleporterTop.GetComponent<Teleport>().SetPosition(-7.5f,0);
 			}
+			*/
 			
 			//Met tous les tableaux désactivés
 			tableaux[i].SetActive(false);
@@ -63,8 +69,10 @@ public class TableauManager : MonoBehaviour
 
 	//Fonction qui active le tableau d'indice index, active l'ancien tableau actuel, et met à jour la variable activeTableau
 	public static void ShowTableau(int index){
-		tableaux[index].SetActive(true);
+		// Debug.Log(index);
+		// Debug.Log(tableaux[index]);
 		tableaux[activeTableau].SetActive(false);
+		tableaux[index].SetActive(true);
 		activeTableau = index;
 	}
 
