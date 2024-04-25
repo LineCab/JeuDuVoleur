@@ -10,13 +10,16 @@ public class Laser : MonoBehaviour
 	[SerializeField] private float endSize = 1f;
 	// taille de départ du laser
 	[SerializeField] private float startSize = 1f;
-	// actualiser la taille du laser
-	// taille de départ du laser
-	void Start()
+    // actualiser la taille du laser
+    // taille de départ du laser
+    [SerializeField] private AudioManager audioManager;
+
+    void Start()
 	{
 		// taille de laser de 1y 1x 1z
 		transform.localScale = new Vector3(1, 1, 0);
-	}
+        audioManager.PlaySFX(audioManager.laserSFX); //Joue le bruitage de dégâts
+    }
 	void Update()
 	{
 		// actualiser la taille du laser

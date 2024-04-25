@@ -15,6 +15,8 @@ public class TransparentFlashing : MonoBehaviour {
 	[SerializeField] Impact impact;
     // Start is called before the first frame update
 
+    [SerializeField] private AudioManager audioManager;
+
     private SpriteRenderer _sprite;
 	private int _step = 0; //0 opaque, 1 goToTransparent, 2 transparent, 3 goToOpaque
 	private float _timer = 0;
@@ -31,7 +33,8 @@ public class TransparentFlashing : MonoBehaviour {
 			_timer = transparent; //On commence le timer à la valeur qu'il dure transparent
 			_sizeY = tailleInitiale; //On commence la taille à la taille initiale
 		}
-	}
+        audioManager.PlaySFX(audioManager.laserSFX); //Joue le bruitage de dégâts
+    }
 
 	void FixedUpdate() {
 		// Si la taille n'est pas la taille finale, on augmente la taille de l'objet

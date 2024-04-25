@@ -424,6 +424,7 @@ MonoBehaviour:
   tailleFinale: 5
   tailleInitiale: 1
   impact: {fileID: 23474365}
+  audioManager: {fileID: 1084043363}
 --- !u!114 &23474365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +538,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 859830945201865788, guid: f463932ce2a2446429b264e5dc92e897, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.62809694
+      value: 0.61641437
       objectReference: {fileID: 0}
     - target: {fileID: 859830945201865788, guid: f463932ce2a2446429b264e5dc92e897, type: 3}
       propertyPath: m_LocalScale.y
@@ -545,11 +546,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 859830945201865788, guid: f463932ce2a2446429b264e5dc92e897, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4837
+      value: -0.4856
       objectReference: {fileID: 0}
     - target: {fileID: 859830945201865788, guid: f463932ce2a2446429b264e5dc92e897, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7269
+      value: -0.7266
       objectReference: {fileID: 0}
     - target: {fileID: 859830945201865788, guid: f463932ce2a2446429b264e5dc92e897, type: 3}
       propertyPath: m_LocalPosition.z
@@ -760,7 +761,7 @@ PrefabInstance:
     - target: {fileID: 5621234150465771956, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
       propertyPath: audioManager
       value: 
-      objectReference: {fileID: 1084043363}
+      objectReference: {fileID: 0}
     - target: {fileID: 6648101182493240493, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
       propertyPath: m_Size.x
       value: 0.8277545
@@ -4761,6 +4762,7 @@ MonoBehaviour:
   tailleFinale: 5
   tailleInitiale: 1
   impact: {fileID: 796702810}
+  audioManager: {fileID: 0}
 --- !u!4 &796702812
 Transform:
   m_ObjectHideFlags: 0
@@ -6050,6 +6052,7 @@ MonoBehaviour:
   tailleFinale: 5
   tailleInitiale: 1
   impact: {fileID: 1163318718}
+  audioManager: {fileID: 1084043363}
 --- !u!114 &1163318718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7659,6 +7662,7 @@ MonoBehaviour:
   tailleFinale: 5
   tailleInitiale: 1
   impact: {fileID: 1478846709}
+  audioManager: {fileID: 1084043363}
 --- !u!114 &1478846709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11668,6 +11672,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5740743560978315030, guid: d46990a806932c94fb605d9573019a03, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548816510263248998, guid: d46990a806932c94fb605d9573019a03, type: 3}
+      propertyPath: laserSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 98708a5ac795889459e787ce7bd9e945, type: 3}
     - target: {fileID: 7906811273402448278, guid: d46990a806932c94fb605d9573019a03, type: 3}
       propertyPath: m_Name
       value: Audio Manager

@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip backgroundMusic; //Morceau du niveau
     public AudioClip damageSFX; //Effet sonore des dégâts
 	public AudioClip finishSFX; //Effet sonore des dégâts
+    public AudioClip laserSFX; //Effet sonore
 
     void Start()
     {
