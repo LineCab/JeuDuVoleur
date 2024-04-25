@@ -54,7 +54,7 @@ public class TransparentFlashing : MonoBehaviour {
             }
 		} else { // Si le timer vaut 0 (a fini de s'écouler), on passe à l'étape suivante (revient à 0 si on dépasse 4)
 		// remttre la taille initiale
-			_step = (_step+1)%10;
+			_step = (_step+1)%5;
 			_timer = returnTimeStep(); //(la fonction va récupérer quelle est la prochaine valeur à charger dans le timer)
 		}
 	}
