@@ -424,7 +424,7 @@ MonoBehaviour:
   tailleFinale: 5
   tailleInitiale: 1
   impact: {fileID: 23474365}
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1084043363}
 --- !u!114 &23474365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5870,7 +5870,7 @@ MonoBehaviour:
   tailleFinale: 5
   tailleInitiale: 1
   impact: {fileID: 1163318718}
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1084043363}
 --- !u!114 &1163318718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6464,7 +6464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1246372854
 Transform:
   m_ObjectHideFlags: 0
@@ -6944,7 +6944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2284a2b33400477458402d0753b00615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTableau: 5
+  startTableau: 1
 --- !u!4 &1432177933
 Transform:
   m_ObjectHideFlags: 0
