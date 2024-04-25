@@ -100,8 +100,6 @@ public class Menu : MonoBehaviour
 	//Fonction qui lance le jeu
 	public void PlayGame()
 	{
-		//Mettre entre guillemets le nom de la scène vers laquelle charger
-		//Pour utiliser SceneManager, il faut impérativement rajouter "using UnityEngine.SceneManagement;" en haut du script.
 		SceneManager.LoadScene("SceneMap1");
 	}
 	public void goMap()
