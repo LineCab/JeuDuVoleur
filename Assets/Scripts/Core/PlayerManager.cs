@@ -32,7 +32,7 @@ public class PlayerManager : MonoBehaviour
 	
 	
 	[SerializeField] private HUD hud; //on joint le hud du canvas
-	[SerializeField] private AudioManager audioManager; 
+	[SerializeField] private AudioManager audioManager;
 	
 	//Variables attributs  du joueur.
 	
@@ -79,6 +79,11 @@ public class PlayerManager : MonoBehaviour
 			hud.updateLivesText(lives);
 		}
 		audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
+		if (lives <= 0)
+		{
+			StopTimer();
+			hud.showGameOver();
+		}
 	}
 
 	//On récupère le nombre de morts
