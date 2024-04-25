@@ -590,6 +590,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1962372717}
     - target: {fileID: 5621234150465771956, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 89997550}
+    - target: {fileID: 5621234150465771956, guid: c645055b3332f9c4db776ff49b792d76, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1084043363}
