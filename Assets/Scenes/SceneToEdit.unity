@@ -8434,7 +8434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleporterLeft: {fileID: 2010708583}
   teleporterRight: {fileID: 626077527}
-  teleporterTop: {fileID: 0}
+  teleporterTop: {fileID: 1683321699}
 --- !u!1001 &1564654882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9137,6 +9137,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1683321699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 935039620488651818, guid: ff1f5deed17eb294d8e6e25e1d1798da, type: 3}
+  m_PrefabInstance: {fileID: 2059703303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1687249080
 GameObject:
   m_ObjectHideFlags: 0
@@ -11694,11 +11699,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2918245067318499447, guid: ff1f5deed17eb294d8e6e25e1d1798da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.95
+      value: -4.93
       objectReference: {fileID: 0}
     - target: {fileID: 2918245067318499447, guid: ff1f5deed17eb294d8e6e25e1d1798da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.02
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 2918245067318499447, guid: ff1f5deed17eb294d8e6e25e1d1798da, type: 3}
       propertyPath: m_LocalPosition.z
